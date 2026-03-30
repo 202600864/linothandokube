@@ -268,7 +268,6 @@ body {
 </header>
 
 <nav class="navbar">
-   <nav class="navbar">
     <ul>
         <li><a href="#" onclick="showSection('home')">Home</a></li>
         <li><a href="#" onclick="showSection('about')">About</a></li>
@@ -276,7 +275,6 @@ body {
         <li><a href="#" onclick="showSection('extraresources')">Extra Resources</a></li>
         <li><a href="#" onclick="showSection('contact')">Contact</a></li>
     </ul>
-</nav>
 </nav>
 
 <!-- HOME -->
@@ -480,7 +478,7 @@ body {
 </div>
 </section>
 <!--EXTRA RESOURCES-->
-<section id="Contact" class="section"
+<section id="contact" class="section">
 
 <!-- CONTACT -->
 <section id="contact" class="section">
@@ -504,8 +502,11 @@ function showSection(sectionId) {
 
     // Hide all sections
     sections.forEach(section => 
+    {
         section.style.display = "none";
     });
+    
+        
 
     // Show selected section
     document.getElementById(sectionId).style.display = "block";
